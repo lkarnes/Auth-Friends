@@ -25,15 +25,16 @@ class AddFriend extends React.Component {
         .then(res=>{
             console.log('data is saved')
         })
+        document.location.reload();
     }
 
     render () {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type='text' name='name' value={this.state.name} onChange={this.handleChange}/>
-                <input type='number' name='age' value={this.state.age} onChange={this.handleChange}/>
-                <input type='email' name='email' value={this.state.email} onChange={this.handleChange}/>
-                <button type='submit'>Sumbitch</button>
+                <input type='text' name='name' placeholder='Name'value={this.state.name} onChange={this.handleChange}/>
+                <input type='number' name='age' placeholder='age' value={this.state.age} onChange={this.handleChange}/>
+                <input type='email' name='email'placeholder='email' value={this.state.email} onChange={this.handleChange}/>
+                <button type='submit'>Submit</button>
             </form>
         )
     }

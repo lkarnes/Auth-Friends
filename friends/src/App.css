@@ -20,3 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+.friend-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.friend-box {
+  border: 1px solid black;
+  width: 400px;
+  margin: 30px 0;
+}
+.friend-list > h2 {
+  width: 100%;
+}
